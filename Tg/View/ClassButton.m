@@ -7,29 +7,37 @@
 //
 
 #import "ClassButton.h"
+@interface ClassButton () {
+    CGRect imageRect;
+    CGRect titleRect;
+}
+@end
 
 @implementation ClassButton
 
--(instancetype)initWithFrame:(CGRect)frame {
+-(instancetype)initWithFrame:(CGRect)frame imageFrame:(CGRect)imageFrame titleFrame:(CGRect)titleFrame {
     if (self = [super initWithFrame:frame]) {
+        imageRect = imageFrame;
+        titleRect = titleFrame;
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return self;
 }
 
 -(CGRect)titleRectForContentRect:(CGRect)contentRect {
-    CGFloat x = 0;
-    CGFloat y = 0;
-    CGFloat w = 50;
-    CGFloat h = 44;
+    CGFloat x = titleRect.origin.x;
+    CGFloat y = titleRect.origin.y;
+    CGFloat w = titleRect.size.width;
+    CGFloat h = titleRect.size.height;
     return CGRectMake(x, y, w, h);
 }
 
 -(CGRect)imageRectForContentRect:(CGRect)contentRect {
-    CGFloat x = 50;
-    CGFloat y = (44.0 - 15) / 2;
-    CGFloat w = 15;
-    CGFloat h = 15;
+    CGFloat x = imageRect.origin.x;
+    CGFloat y = imageRect.origin.y;
+    CGFloat w = imageRect.size.width;
+    CGFloat h = imageRect.size.height;
     return CGRectMake(x, y, w, h);
 }
 

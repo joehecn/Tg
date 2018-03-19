@@ -10,4 +10,6 @@
 
 @interface ClassButton : UIButton
 
+-(instancetype)initWithFrame:(CGRect)frame imageFrame:(CGRect)imageFrame titleFrame:(CGRect)titleFrame;
+
 @end
