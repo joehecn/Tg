@@ -8,7 +8,35 @@
 
 #import "ProductTableViewCell.h"
 
+@interface ProductTableViewCell () {
+    
+}
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UILabel *subTitle1;
+@property (weak, nonatomic) IBOutlet UILabel *subTitle2;
+@property (weak, nonatomic) IBOutlet UILabel *subTitle3;
+@property (weak, nonatomic) IBOutlet UILabel *saleNum;
+
+
+@end
+
 @implementation ProductTableViewCell
+@synthesize imageView = _imageView;
+
+-(instancetype)createCellWithTableView:(UITableView *)tableView {
+    static NSString *ID = @"www.imooc,com.tb.cell";
+    ProductTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"ProductTableViewCell" owner:nil options:nil]lastObject];
+    }
+    return cell;
+}
+
+-(void)loadData {
+    
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
