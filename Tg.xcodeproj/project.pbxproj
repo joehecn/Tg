@@ -25,6 +25,8 @@
 		AF7773F8205BA5B100020477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7773F6205BA5B100020477 /* LaunchScreen.storyboard */; };
 		AF7773FB205BA5B100020477 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7773FA205BA5B100020477 /* main.m */; };
 		AF777403205BAA0800020477 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = AF777402205BAA0800020477 /* Util.m */; };
+		AF78F13B2060346D00D5ACD5 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF78F1392060346D00D5ACD5 /* ProductTableViewCell.m */; };
+		AF78F13C2060346D00D5ACD5 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF78F13A2060346D00D5ACD5 /* ProductTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,9 @@
 		AF7773FA205BA5B100020477 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF777401205BAA0800020477 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		AF777402205BAA0800020477 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		AF78F1382060346D00D5ACD5 /* ProductTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		AF78F1392060346D00D5ACD5 /* ProductTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		AF78F13A2060346D00D5ACD5 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,9 @@
 				AF44A51D205BD72000987640 /* CitySelectedButton.m */,
 				AF75A269205FBBB2005C0348 /* ClassButton.h */,
 				AF75A26A205FBBB2005C0348 /* ClassButton.m */,
+				AF78F1382060346D00D5ACD5 /* ProductTableViewCell.h */,
+				AF78F1392060346D00D5ACD5 /* ProductTableViewCell.m */,
+				AF78F13A2060346D00D5ACD5 /* ProductTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 			files = (
 				AF7773F8205BA5B100020477 /* LaunchScreen.storyboard in Resources */,
 				AF75A265205F9E53005C0348 /* city.plist in Resources */,
+				AF78F13C2060346D00D5ACD5 /* ProductTableViewCell.xib in Resources */,
 				AF7773F5205BA5B100020477 /* Assets.xcassets in Resources */,
 				AF7773F3205BA5B100020477 /* Main.storyboard in Resources */,
 			);
@@ -234,6 +243,7 @@
 				AF75A262205F9DB8005C0348 /* CitySelectViewController.m in Sources */,
 				AF7773ED205BA5B100020477 /* AppDelegate.m in Sources */,
 				AF44A50E205BB94600987640 /* MainViewController.m in Sources */,
+				AF78F13B2060346D00D5ACD5 /* ProductTableViewCell.m in Sources */,
 				AF44A517205BBC5D00987640 /* UserViewController.m in Sources */,
 				AF44A514205BBC5300987640 /* HomeViewController.m in Sources */,
 				AF75A25F205F62F2005C0348 /* LoginViewController.m in Sources */,
