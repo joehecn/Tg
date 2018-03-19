@@ -12,6 +12,7 @@
 #import "LoginViewController.h"
 #import "CitySelectViewController.h"
 #import "MyDataSource.h"
+#import "ClassButton.h"
 
 @interface HomeViewController () {
     LoginViewController *vc_login;
@@ -75,6 +76,28 @@
     [bt_selectCity setImage:[UIImage imageNamed:@"arrow"] forState:UIControlStateNormal];
     UIBarButtonItem *bbi_selectCity = [[UIBarButtonItem alloc]initWithCustomView:bt_selectCity];
     self.navigationItem.rightBarButtonItem = bbi_selectCity;
+    
+    // 分类按钮
+    NSArray *className = @[@"机票",@"车票",@"汽车",@"蛋糕",@"美食",@"手表",@"电脑",@"手机"];
+    for (int i = 0; i < 8; i++) {
+        CGRect btRect;
+        CGRect imageRect;
+        CGRect titleRect;
+        if (i < 4) {
+            btRect = CGRectMake(i*SCREEN_WIDTH/4, 75, SCREEN_WIDTH/4, 50);
+        } else {
+            btRect = CGRectMake((i-4)*SCREEN_WIDTH/4, 75 + 60, SCREEN_WIDTH/4, 50);
+        }
+        imageRect = CGRectMake((SCREEN_WIDTH/4-30)/2, 0, 30, 30);
+        titleRect = CGRectMake(0, 32, SCREEN_WIDTH/4, 18);
+        ClassButton *bt_class = [[ClassButton alloc]initWithFrame:btRect imageFrame:imageRect titleFrame:titleRect];
+        NSString *image = [NSString stringWithFormat:@"home_class%d", i + 1];
+        NSString *title = [className objectAtIndex:i];
+        [bt_class setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+        [bt_class setTitle:title forState:UIControlStateNormal];
+        [bt_class setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [self.view addSubview:bt_class];
+    }
 }
 
 -(void)loginAction {
