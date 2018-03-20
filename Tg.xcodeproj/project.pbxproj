@@ -27,6 +27,9 @@
 		AF777403205BAA0800020477 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = AF777402205BAA0800020477 /* Util.m */; };
 		AF78F13B2060346D00D5ACD5 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF78F1392060346D00D5ACD5 /* ProductTableViewCell.m */; };
 		AF78F13C2060346D00D5ACD5 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF78F13A2060346D00D5ACD5 /* ProductTableViewCell.xib */; };
+		AFE3C5D42060B32F00EEF0F6 /* ProductDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C5D32060B32F00EEF0F6 /* ProductDataSource.m */; };
+		AFE3C5D72060BFFB00EEF0F6 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C5D62060BFFB00EEF0F6 /* ItemViewController.m */; };
+		AFE3C5DA2060D19200EEF0F6 /* StarRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C5D92060D19200EEF0F6 /* StarRateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,12 @@
 		AF78F1382060346D00D5ACD5 /* ProductTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
 		AF78F1392060346D00D5ACD5 /* ProductTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
 		AF78F13A2060346D00D5ACD5 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		AFE3C5D22060B32F00EEF0F6 /* ProductDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDataSource.h; sourceTree = "<group>"; };
+		AFE3C5D32060B32F00EEF0F6 /* ProductDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDataSource.m; sourceTree = "<group>"; };
+		AFE3C5D52060BFFB00EEF0F6 /* ItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		AFE3C5D62060BFFB00EEF0F6 /* ItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+		AFE3C5D82060D19200EEF0F6 /* StarRateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarRateView.h; sourceTree = "<group>"; };
+		AFE3C5D92060D19200EEF0F6 /* StarRateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarRateView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +105,8 @@
 				AF75A25E205F62F2005C0348 /* LoginViewController.m */,
 				AF75A260205F9DB8005C0348 /* CitySelectViewController.h */,
 				AF75A261205F9DB8005C0348 /* CitySelectViewController.m */,
+				AFE3C5D52060BFFB00EEF0F6 /* ItemViewController.h */,
+				AFE3C5D62060BFFB00EEF0F6 /* ItemViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -110,6 +121,8 @@
 				AF78F1382060346D00D5ACD5 /* ProductTableViewCell.h */,
 				AF78F1392060346D00D5ACD5 /* ProductTableViewCell.m */,
 				AF78F13A2060346D00D5ACD5 /* ProductTableViewCell.xib */,
+				AFE3C5D82060D19200EEF0F6 /* StarRateView.h */,
+				AFE3C5D92060D19200EEF0F6 /* StarRateView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +133,8 @@
 				AF75A264205F9E53005C0348 /* city.plist */,
 				AF75A266205FB369005C0348 /* MyDataSource.h */,
 				AF75A267205FB369005C0348 /* MyDataSource.m */,
+				AFE3C5D22060B32F00EEF0F6 /* ProductDataSource.h */,
+				AFE3C5D32060B32F00EEF0F6 /* ProductDataSource.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,7 +258,10 @@
 				AF75A262205F9DB8005C0348 /* CitySelectViewController.m in Sources */,
 				AF7773ED205BA5B100020477 /* AppDelegate.m in Sources */,
 				AF44A50E205BB94600987640 /* MainViewController.m in Sources */,
+				AFE3C5D72060BFFB00EEF0F6 /* ItemViewController.m in Sources */,
+				AFE3C5DA2060D19200EEF0F6 /* StarRateView.m in Sources */,
 				AF78F13B2060346D00D5ACD5 /* ProductTableViewCell.m in Sources */,
+				AFE3C5D42060B32F00EEF0F6 /* ProductDataSource.m in Sources */,
 				AF44A517205BBC5D00987640 /* UserViewController.m in Sources */,
 				AF44A514205BBC5300987640 /* HomeViewController.m in Sources */,
 				AF75A25F205F62F2005C0348 /* LoginViewController.m in Sources */,

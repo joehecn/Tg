@@ -11,6 +11,7 @@
 
 @interface MyDataSource () {
     NSString *currentCityName;
+    NSMutableArray *homeProductDataArray;
 }
 
 @end
@@ -38,5 +39,13 @@ static id _instance = nil;
 
 -(NSString *)getCityName {
     return currentCityName;
+}
+
+-(void)setHomeData:(NSMutableArray *)array {
+    homeProductDataArray = array;
+}
+
+-(NSMutableArray *)getHomeData {
+    return homeProductDataArray;
 }
 @end

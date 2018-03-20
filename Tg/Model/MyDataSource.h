@@ -14,4 +14,6 @@
 -(void)setCityName:(NSString *)str;
 -(NSString *)getCityName;
 
+-(void)setHomeData:(NSMutableArray *)array;
+-(NSMutableArray *)getHomeData;
 @end

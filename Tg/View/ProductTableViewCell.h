@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProductDataSource.h"
 
 @interface ProductTableViewCell : UITableViewCell
+
++(instancetype)createCellWithTableView:(UITableView *)tableView;
+-(void)loadData:(ProductDataSource *)product;
 
 @end
